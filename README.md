@@ -1,9 +1,13 @@
 
-## Available Scripts
+## Chatbot Frontend
 
-In the project directory, you can run:
+## Getting Started
+Note: Must have node.js installed
 
+First install all packages:
 ## npm install
+
+Then run the development server:
 ## npm start 
 
 
