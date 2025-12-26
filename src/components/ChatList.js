@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function ChatList({ chats, activeChatId, onCreate, onSelect }) {
   return (
     <div
@@ -20,7 +22,8 @@ export default function ChatList({ chats, activeChatId, onCreate, onSelect }) {
               background: activeChatId === chat.id ? "#eee" : "transparent",
             }}
           >
-            {chat.name}
+
+            <Link to={`/${chat.name}`}>{chat.name}</Link>
           </li>
         ))}
       </ul>
