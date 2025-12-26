@@ -12,7 +12,7 @@ export default function Chat() {
     const id = Date.now();
     const newChat = {
       id,
-      name: `Chat ${chats.length + 1}`,
+      name: `Chat${chats.length + 1}`,
       messages: [],
     };
     setChats([...chats, newChat]);

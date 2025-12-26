@@ -4,7 +4,7 @@ import ChatWindow from "./components/ChatWindow";
 import Test from "./components/Test";
 import Navigation from "./components/Navigation";
 import Chat from './components/Chat';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 export default function App() {
 
@@ -14,6 +14,7 @@ export default function App() {
     <Routes>
               {/* The ':username' part is the dynamic parameter */}
               <Route path="/" element={<Chat />} />
+              <Route path="/:chatName" element={<Chat />} />
               </Routes>
   </div>
   );
